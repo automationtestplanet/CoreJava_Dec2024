@@ -5,15 +5,14 @@ public class Assignment1 {
 	//Write a reusable program to print Even and odd numbers count from an array 
 	public static void printOddAndEvenNumersCountFromArray(int[] intArr) {
 		int evenCount = 0;
-		int oddCount = 0;
-		
+		int oddCount = 0;		
 		for(int eachNum:intArr) {
-			if(eachNum %2 ==0)
+			if(eachNum %2 ==0) {
 				evenCount++;
-			else
+			} else {
 				oddCount++;
+			}
 		}
-		
 		System.out.println("Even Numbers Count: "+ evenCount);
 		System.out.println("Odd Numbers Count: "+ oddCount);
 	}
