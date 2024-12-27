@@ -2,6 +2,10 @@ package assignments.sasidhar;
 
 import java.util.Scanner;
 
+// Write a program to reverse a string without reversing the special characters position
+	// Input: "ab@cde%fg"
+	// Output: "gf@edc%ba"
+
 public class Assignment1 {
 
 	public static void main(String[] args) {
