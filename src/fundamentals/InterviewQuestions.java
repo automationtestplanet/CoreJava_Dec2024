@@ -400,6 +400,21 @@ public class InterviewQuestions {
 		}		
 		System.out.println(sum);
 	}
+	
+	//Write a program to print each character count from string
+	public static void printEachCharCountFromString(String str) {
+		while(str.length() > 0) {			
+			char firstChar = str.charAt(0);
+			int count = 0;			
+			for(char eachChar:str.toCharArray()) {
+				if(eachChar == firstChar)
+					count++;
+			}
+			
+			System.out.println(firstChar+" : "+ count);
+			str = str.replaceAll(String.valueOf(firstChar), "");			
+		}
+	}
 
 	public static void main(String[] args) {
 
@@ -484,6 +499,9 @@ public class InterviewQuestions {
 		
 		System.out.println("-------------print Sum of digits untila sigle digit----------------");
 		printSumOfNumbersUptoSungleDigit(657849);
+		
+		System.out.println("-------------print Each Character count from string----------------");
+		printEachCharCountFromString("malayalam");
 	}
 
 }
