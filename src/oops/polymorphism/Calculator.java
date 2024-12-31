@@ -21,5 +21,18 @@ public class Calculator {
 	public int evaluateExpression(int a,int b,int c, int d, int e, int f) {		
 		return a+b*c-d/e&f;
 	}
+	
+	public static void addition(int a,int b, int c) {
+		System.out.println(a+b+c);
+	}
+	
+	public static void addition(int a,int b, int c, int d) {
+		System.out.println(a+b+c+d);
+	}
+	
+	public final void subtraction(int a, int b,int c) {
+		System.out.println(a-b-c);
+	}
+
 
 }
