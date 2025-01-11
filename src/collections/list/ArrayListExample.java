@@ -35,7 +35,14 @@ public class ArrayListExample {
 		for(Object eachElement: arraylist) {
 			System.out.println(eachElement);
 		}
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println(arraylist.get(arraylist.size()-3));
 		
+		String str = (String)arraylist.get(arraylist.size()-3);
+		System.out.println(str);
+		
+		int int1 = (int)arraylist.get(arraylist.size()-3);
+		System.out.println(int1);
 		
 	}
 

@@ -415,6 +415,24 @@ public class InterviewQuestions {
 			str = str.replaceAll(String.valueOf(firstChar), "");			
 		}
 	}
+	
+	//Write a program to Reverse each word in a sentence without changing their position
+	// Ex: I Love India
+	// o/P : I evoL aidnI
+	
+	public static void reverseStringWithoutChaingingWordsPosition(String str) {
+		String revStr = "";
+		
+		for(String eachWord : str.split(" ")) {
+			String tempRevStr = "";
+			for(char ch : eachWord.toCharArray()) {
+				tempRevStr = ch + tempRevStr;
+			}			
+			revStr = revStr + tempRevStr + " ";
+		}
+		
+		System.out.println(revStr);
+	} 
 
 	public static void main(String[] args) {
 
@@ -502,6 +520,9 @@ public class InterviewQuestions {
 		
 		System.out.println("-------------print Each Character count from string----------------");
 		printEachCharCountFromString("malayalam");
+		
+		System.out.println("-------------Reverse each word in a sentence without chainging their position----------------");
+		reverseStringWithoutChaingingWordsPosition("I Love India");
 	}
 
 }

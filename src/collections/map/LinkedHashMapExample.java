@@ -13,6 +13,9 @@ public class LinkedHashMapExample {
 		linkedHashMap.put("lastName", "Ch");
 		linkedHashMap.put(10, 100);
 		linkedHashMap.put('A', 'B');
+		linkedHashMap.put(null, null);
+		linkedHashMap.put(null, 100);
+		linkedHashMap.put(100, null);
 		
 		System.out.println(linkedHashMap);
 		
