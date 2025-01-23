@@ -1,6 +1,7 @@
 package collections.set;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetExample {
@@ -31,6 +32,12 @@ public class HashSetExample {
 		
 		for(Object eachElement: hashSet) {
 			System.out.println(eachElement);
+		}
+		
+		Iterator hashSetItr = hashSet.iterator();
+		System.out.println("--------------------------------------------------------");
+		if(hashSetItr.hasNext()) {
+			System.out.println(hashSetItr.next()); 
 		}
 
 	}

@@ -7,8 +7,8 @@ import java.io.FileNotFoundException;
 public class FileInputStreamExample {
 
 	public static void main(String[] args) throws Exception {
-		
-		File file1 = new File("C:\\Users\\RAJU CHELLE\\Desktop\\InputFile.txt");
+		String currentDirPath = System.getProperty("user.dir");				
+		File file1 = new File(currentDirPath+"\\TestDataFiles\\InputFile.txt");
 		
 		FileInputStream fis =  new FileInputStream(file1);
 		
